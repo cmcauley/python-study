@@ -3,4 +3,4 @@
 - help(module.function) = built-in help on function in module
 - Using a comma with `print` inserts a space between the items, but using a plus sign just concatenates them.  
 - Python strings are immutable
-- 
+- The `-tt` flag for python causes it to halt if it ever encounters a mixture of tab characters and spaces.
