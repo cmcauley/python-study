@@ -1,0 +1,4 @@
+- dir(module) = lists all symbols in the module
+- help(module) = built-in help on module
+- help(module.function) = built-in help on function in module
+- 
