@@ -1,6 +1,13 @@
 - dir(module) = lists all symbols in the module
 - help(module) = built-in help on module
 - help(module.function) = built-in help on function in module
-- Using a comma with `print` inserts a space between the items, but using a plus sign just concatenates them.  
+- Using a comma with `print` inserts a space between the items, but using a plus sign concatenates them.  
 - Python strings are immutable
 - The `-tt` flag for python causes it to halt if it ever encounters a mixture of tab characters and spaces.
+- The elements of a list do not have to be of the same type.
+- To make a copy of a list, use the syntax `listOne = listTwo[:]`
+- To loop over a list, use the syntax `for var in listOne: print var`
+- To test if a value is in a list (or other data structure), use the syntax `value in listOne`
+- `listOne.append(value)` does not return any value, it modifies the original list
+- `del varOne` removes the definition of a variable, but not necessarily the object itself (i.e., if `varOne` and `varTwo` point to the same object and you `del varOne`, the object and `varTwo` will remain in tact)
+- A list can grow/shrink in size and can otherwise be modified; a tuple has a fixed length and is immutable.
