@@ -11,3 +11,5 @@
 - `listOne.append(value)` does not return any value, it modifies the original list
 - `del varOne` removes the definition of a variable, but not necessarily the object itself (i.e., if `varOne` and `varTwo` point to the same object and you `del varOne`, the object and `varTwo` will remain in tact)
 - A list can grow/shrink in size and can otherwise be modified; a tuple has a fixed length and is immutable.
+- Dictionaries can retrieve by a key in constant time (O(1)).
+- If you put a trailing comma at the end of a print statement, it will suppress the newline character that is normally added.
