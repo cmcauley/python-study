@@ -60,14 +60,12 @@ def print_words(filename):
     wordDict = build_dict(filename)
     for word, count in wordDict.items():
         print word, count
-    print 'in print_words'
 
 def print_top(filename):
     wordDict = build_dict(filename)
 
     for word, count in sorted(wordDict.items(), key=tupleSortLast, reverse=True)[:20]:
         print word, count
-    print 'in print_top'
 
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
