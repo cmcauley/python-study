@@ -46,10 +46,13 @@ def build_dict(filename):
     wordDict = {}
 
     for word in fileText.split():
-        if word.lower() in wordDict:
-            wordDict[word.lower()] +=1
+        word = word.lower()
+        if word in wordDict:
+            wordDict[word] += 1
         else:
-            wordDict[word.lower()] = 1
+            wordDict[word] = 1
+
+    fileHandle.close()
 
     return wordDict
 
@@ -58,8 +61,9 @@ def tupleSortLast(s):
 
 def print_words(filename):
     wordDict = build_dict(filename)
-    for word, count in wordDict.items():
-        print word, count
+    words = sorted(wordDict.keys())
+    for word in words:
+        print word, wordDict[word]
 
 def print_top(filename):
     wordDict = build_dict(filename)
