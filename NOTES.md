@@ -13,3 +13,4 @@
 - A list can grow/shrink in size and can otherwise be modified; a tuple has a fixed length and is immutable.
 - Dictionaries can retrieve by a key in constant time (O(1)).
 - If you put a trailing comma at the end of a print statement, it will suppress the newline character that is normally added.
+- Calling .split() without arguments will split on whitespaces
