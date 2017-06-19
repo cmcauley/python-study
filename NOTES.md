@@ -14,3 +14,21 @@
 - Dictionaries can retrieve by a key in constant time (O(1)).
 - If you put a trailing comma at the end of a print statement, it will suppress the newline character that is normally added.
 - Calling .split() without arguments will split on whitespaces
+- re.search(pat, text) return a Match type object
+- match.group() returns the matching text that was found; if there's no match found then match will point to the 'None' built-in
+- the entire pattern must be found in the text for it to count as a match
+- The search will go left to right and will stop after the first match
+- def Find(pat, text):
+  - match = re.search(pat, text)
+  - if match: print match.group()
+  - else: print 'not found'
+- regular expression basic patterns
+  - period (.) matches any single character except newline
+  - \w matches any "word" character: a letter or digit or underscore [a-zA-Z0-9_]
+  - \W matches any non-"word" character
+  - \d matches any decimal digit [0-9]
+  - \s matches a single whitespace character: space, newline, return, tab, form [ \n\r\t\f]
+  - \S matches any non-whitespace character
+  - + matches 1 or more of the pattern
+  - * matches 0 or more of the pattern
+- Python has an option for a raw string -- putting a lowercase r before a string tells Python not to do any special processing with backslashes in the string.
